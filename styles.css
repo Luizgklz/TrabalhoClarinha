@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #eee9e4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90px;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+}
+
+header .logo img {
+    width: 120px;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+#tituloprincipal {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 20px;
+    color: rgb(233, 233, 227);
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+main h2, main h3 {
+    text-align: left;
+}
+
+#titulo2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#titulo3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.texto {
+    font-size: 18px;
+    max-width: 700px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    max-width: 700px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.imagens {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 18px;
+}
+
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    margin-top: auto;
+}
+
+@media (max-width: 800px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto; 
+        
+    }
+
+    header .logo {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #tituloprincipal {
+        font-size: 18px;
+        display: none;
+    }
+
+    #titulo2, #titulo3 {
+        font-size: 24px;
+    }
+
+    .texto, h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .imagens {
+        width: 80%;
+    }
+}
